@@ -1,0 +1,50 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md mx-auto my-5 p-5 align-self-center">
+            <p class="lead">Devs can be edited using the following form.</p>
+        </div>
+        <div class="col-md mx-auto align-self-center">
+            <div class="card shadow my-3 p-3">
+                <div class="card-body">
+                    <h5 class="card-title text-center">Dev</h5>
+                    <hr class="my-4" />
+                    <form
+                        class="my-3"
+                        [formGroup]="devForm"
+                        (ngSubmit)="onFormSubmit(devForm.value)"
+                    >
+                        <div class="form-group">
+                            <label for="name">Dev Name </label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="name"
+                                formControlName="name"
+                                placeholder="Developer"
+                                required
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="github">GitHub Link</label>
+                            <input
+                                type="text"
+                                class="form-control"
+                                id="github"
+                                formControlName="github"
+                                placeholder="https:://github.com/"
+                                required
+                            />
+                        </div>
+                        <button
+                            type="submit"
+                            class="btn btn-primary btn-block mt-5"
+                            [disabled]="!devForm.valid"
+                        >
+                            Update
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
