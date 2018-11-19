@@ -4,6 +4,8 @@ MEAN Stack with Angular 7 (ng2+)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.6.
 
+Deployed on [Heroku](https://mean-ng7-crud.herokuapp.com/)
+
 ## install
 
 Install related dependencies using the following commands
@@ -22,4 +24,4 @@ Clone the project and execute the following command to build and run the applica
 npm run build
 ```
 
-Navigate to `http://localhost:3000/`.
+Navigate to `http://localhost:3000/`
